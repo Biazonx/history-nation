@@ -7,6 +7,9 @@ import michael from "@/assets/figure-michael.jpg";
 import tupac from "@/assets/figure-tupac.jpg";
 import cromwell from "@/assets/figure-cromwell.jpg";
 import attila from "@/assets/figure-attila.jpg";
+import paul from "@/assets/figure-paul.jpg";
+import tokugawa from "@/assets/figure-tokugawa.jpg";
+import xiuquan from "@/assets/figure-xiuquan.jpg";
 
 export type Figure = {
   slug: string;
@@ -238,13 +241,94 @@ export const figures: Figure[] = [
     { year: "1658", event: "Dies in London." },
   ],
 },
+{
+  slug: "paul-of-tarsus",
+  name: "Paul of Tarsus",
+  title: "Apostle to the Gentiles",
+  era: "Classical Era",
+  lifespan: "5 – 64/67",
+  origin: "Tarsus, Cilicia",
+  image: paul,
+  tagline: "The missionary and theologian who helped shape the foundations of Christianity.",
+  bio: [
+    "Paul of Tarsus, also known as Saint Paul or the Apostle Paul, was one of the most influential figures in early Christianity. Born in Tarsus in Cilicia, he was a Roman citizen and received a strong education in Jewish law as a Pharisee.",
+    "Originally known as Saul, Paul initially persecuted early Christians, viewing the movement as a threat to Jewish tradition. According to Christian tradition, his life changed dramatically after experiencing a vision of Jesus on the road to Damascus, leading to his conversion to Christianity.",
+    "Following his conversion, Paul became a passionate missionary who traveled extensively across the eastern Mediterranean. He founded Christian communities in regions such as Asia Minor, Greece, and Syria, helping spread Christianity far beyond its Jewish origins.",
+    "Paul’s letters, known as the Pauline Epistles, form a major part of the New Testament. His writings addressed theological questions, moral teachings, and practical issues faced by early Christian communities. Themes such as salvation through faith, grace, resurrection, and the inclusion of Gentiles became central to Christian doctrine through his teachings.",
+    "Throughout his ministry, Paul faced imprisonment, persecution, and opposition from both Roman authorities and religious critics. Despite these hardships, his influence continued to grow, and his missionary work played a key role in transforming Christianity into a global religion.",
+    "According to tradition, Paul was eventually arrested and executed in Rome during the reign of Emperor Nero. His legacy as a theologian, missionary, and writer has made him one of the most important figures in Christian history."
+  ],
+  highlights: [
+    { year: "5", event: "Born in Tarsus in Cilicia." },
+    { year: "35", event: "Experiences conversion on the road to Damascus." },
+    { year: "40", event: "Begins missionary journeys across the Mediterranean." },
+    { year: "50", event: "Writes several epistles that later become part of the New Testament." },
+    { year: "57", event: "Arrested in Jerusalem." },
+    { year: "60", event: "Arrives in Rome as a prisoner." },
+    { year: "64–67", event: "Executed in Rome during Nero’s reign, according to tradition." },
+  ],
+},
 
+{
+  slug: "tokugawa-ieyasu",
+  name: "Tokugawa Ieyasu",
+  title: "Founder of the Tokugawa Shogunate",
+  era: "Early Modern Era",
+  lifespan: "1543 – 1616",
+  origin: "Mikawa Province, Japan",
+  image: tokugawa,
+  tagline: "The strategist who unified Japan and established centuries of stability.",
+  bio: [
+    "Tokugawa Ieyasu was a Japanese daimyo, military leader, and the founder of the Tokugawa shogunate, which ruled Japan for more than 250 years. Born during the violent Sengoku period, he spent much of his youth as a political hostage amid the constant struggles between rival clans.",
+    "Ieyasu gradually rose to power through alliances, military skill, and political patience. He allied himself with major figures such as Oda Nobunaga and Toyotomi Hideyoshi, surviving decades of warfare and positioning himself as one of the most powerful lords in Japan.",
+    "After Hideyoshi’s death, tensions among competing daimyo erupted into conflict. In 1600, Ieyasu achieved a decisive victory at the Battle of Sekigahara, one of the most important battles in Japanese history. The victory secured his dominance over the country.",
+    "In 1603, the emperor appointed Ieyasu as shogun, formally establishing the Tokugawa shogunate with its capital in Edo, later known as Tokyo. His government centralized authority, controlled the daimyo, and created a stable political system that lasted until the Meiji Restoration in 1868.",
+    "The Tokugawa era brought long-term peace, economic growth, urbanization, and cultural development to Japan. Ieyasu also implemented policies that restricted foreign influence and strengthened internal order.",
+    "Tokugawa Ieyasu died in 1616, but his political system endured for centuries. He is remembered as one of the three great unifiers of Japan and one of the most successful political leaders in Japanese history."
+  ],
+  highlights: [
+    { year: "1543", event: "Born in Mikawa Province, Japan." },
+    { year: "1560", event: "Forms alliance with Oda Nobunaga." },
+    { year: "1582", event: "Survives the political chaos following Nobunaga’s death." },
+    { year: "1590", event: "Relocates to the Kanto region and establishes Edo as his base." },
+    { year: "1600", event: "Wins the decisive Battle of Sekigahara." },
+    { year: "1603", event: "Appointed shogun and establishes the Tokugawa shogunate." },
+    { year: "1616", event: "Dies in Sunpu, Japan." },
+  ],
+},
+
+{
+  slug: "hong-xiuquan",
+  name: "Hong Xiuquan",
+  title: "Leader of the Taiping Rebellion",
+  era: "Modern Era",
+  lifespan: "1814 – 1864",
+  origin: "Guangdong Province, Qing China",
+  image: xiuquan,
+  tagline: "The revolutionary leader who challenged the Qing dynasty through the Taiping movement.",
+  bio: [
+    "Hong Xiuquan was a Chinese religious leader and revolutionary best known as the founder of the Taiping Heavenly Kingdom, a movement that led one of the deadliest civil wars in human history. Born in Guangdong Province during the Qing dynasty, he came from a modest Hakka family and studied for the imperial civil service examinations.",
+    "After repeatedly failing the examinations, Hong experienced a series of religious visions that he later interpreted as divine revelations. Influenced by Christian missionary writings, he came to believe that he was the younger brother of Jesus Christ and was chosen to destroy evil and reform China.",
+    "Hong founded the God Worshipping Society, which attracted followers dissatisfied with Qing rule, social inequality, and economic hardship. The movement rapidly expanded in southern China and evolved into a massive rebellion against the Qing dynasty.",
+    "In 1851, Hong proclaimed the Taiping Heavenly Kingdom and declared himself the Heavenly King. Taiping forces captured large territories and established their capital at Nanjing, where they attempted radical social reforms including land redistribution, restrictions on opium and alcohol, and greater rights for women.",
+    "The Taiping Rebellion devastated China for more than a decade and resulted in tens of millions of deaths through warfare, famine, and disease. Internal divisions, military setbacks, and growing pressure from Qing forces eventually weakened the movement.",
+    "Hong Xiuquan died in 1864 shortly before Qing forces recaptured Nanjing and crushed the rebellion. Although the Taiping Heavenly Kingdom collapsed, the rebellion profoundly weakened the Qing dynasty and remains one of the most significant uprisings in Chinese history."
+  ],
+  highlights: [
+    { year: "1814", event: "Born in Guangdong Province, Qing China." },
+    { year: "1837", event: "Experiences religious visions after failing civil service exams." },
+    { year: "1840", event: "Establishes the God Worshipping Society." },
+    { year: "1851", event: "Proclaims the Taiping Heavenly Kingdom." },
+    { year: "1853", event: "Captures Nanjing and makes it the Taiping capital." },
+    { year: "1864", event: "Dies shortly before the fall of Nanjing." },
+  ],
+},
 {
   slug: "attila-the-hun",
   name: "Attila the Hun",
   title: "Ruler of the Hunnic Empire",
   era: "Classical Era",
-  lifespan: "c. 406 – 453",
+  lifespan: "406 – 453",
   origin: "Pannonian Plain, Hunnic Empire",
   image: attila,
   tagline: "The feared conqueror who challenged both the Eastern and Western Roman Empires.",
