@@ -53,7 +53,7 @@ function ErasPage() {
                             params={{ slug: f.slug }}
                             className="flex items-center gap-3 rounded-lg p-2 transition-transform hover:-translate-y-0.5"
                             style={{
-                              background: "linear-gradient(180deg, oklch(0.3 0.012 240), oklch(0.18 0.01 240))",
+                              background: "linear-gradient(180deg, oklch(0.55 0.18 260), oklch(0.55 0.18 260))",
                               border: "1px solid oklch(0 0 0 / 0.55)",
                               boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.18)",
                             }}
@@ -69,7 +69,7 @@ function ErasPage() {
                             />
                             <div>
                               <div className="font-semibold">{f.name}</div>
-                              <div className="text-xs text-muted-foreground">{f.lifespan}</div>
+                              <div className="font-semibold">{f.lifespan}</div>
                             </div>
                           </Link>
                         </li>

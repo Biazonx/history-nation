@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import faviconUrl from "../assets/favicon.ico?url";
 
 function NotFoundComponent() {
   return (
@@ -90,6 +91,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: faviconUrl,
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -101,7 +107,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico" />
       <head>
         <HeadContent />
       </head>

@@ -40,11 +40,11 @@ export function Footer() {
               <h4 className="text-base font-bold text-shine">Follow</h4>
               <div className="flex gap-2">
                 <a
-                  href="#"
+                  href="https://github.com/Biazonx"
                   aria-label="GitHub"
                   className="grid h-9 w-9 place-items-center rounded-md text-foreground/90 transition-transform hover:-translate-y-0.5"
                   style={{
-                    background: "linear-gradient(180deg, oklch(0.32 0.012 240), oklch(0.18 0.01 240))",
+                    background: "linear-gradient(180deg, oklch(0.55 0.18 260), oklch(0.55 0.18 260))",
                     border: "1px solid oklch(0 0 0 / 0.55)",
                     boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.22)",
                   }}
