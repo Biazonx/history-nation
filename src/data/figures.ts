@@ -4,6 +4,9 @@ import cortes from "@/assets/figure-cortes.jpg";
 import zizka from "@/assets/figure-zizka.jpg";
 import sigurd from "@/assets/figure-sigurd.jpg";
 import michael from "@/assets/figure-michael.jpg";
+import tupac from "@/assets/figure-tupac.jpg";
+import cromwell from "@/assets/figure-cromwell.jpg";
+import attila from "@/assets/figure-attila.jpg";
 
 export type Figure = {
   slug: string;
@@ -95,7 +98,6 @@ export const figures: Figure[] = [
     { year: "1485", event: "Born in Medellín in the Crown of Castile." },
     { year: "1504", event: "Travels to Hispaniola in the Caribbean." },
     { year: "1511", event: "Participates in the conquest of Cuba." },
-    { year: "1519", event: "Launches expedition to mainland Mexico." },
     { year: "1519", event: "Meets Emperor Moctezuma II in Tenochtitlan." },
     { year: "1521", event: "Conquers Tenochtitlan and defeats the Aztec Empire." },
     { year: "1547", event: "Dies near Seville, Spain." },
@@ -180,6 +182,88 @@ export const figures: Figure[] = [
     { year: "1987", event: "Releases the hit album 'Bad.'" },
     { year: "1991", event: "Releases the album 'Dangerous.'" },
     { year: "2009", event: "Dies in Los Angeles, California." },
+  ],
+},
+{
+  slug: "tupac-shakur",
+  name: "Tupac Shakur",
+  title: "Rapper, Actor, and Activist",
+  era: "Modern Era",
+  lifespan: "1971 – 1996",
+  origin: "East Harlem, New York City, United States",
+  image: tupac,
+  tagline: "The influential rapper whose music gave voice to struggle, inequality, and ambition.",
+  bio: [
+    "Tupac Shakur, also known by his stage names 2Pac and Makaveli, was an American rapper, actor, and activist widely regarded as one of the greatest and most influential artists in hip-hop history. Born in East Harlem, New York City, he grew up in a politically active family connected to the Black Panther movement.",
+    "Shakur first gained attention in the early 1990s as a member of the hip-hop group Digital Underground before launching a successful solo career. His debut album, '2Pacalypse Now,' established him as a powerful and controversial voice addressing issues such as racism, poverty, violence, and police brutality.",
+    "During the peak of his career, Tupac released acclaimed albums including 'Strictly 4 My N.I.G.G.A.Z.,' 'Me Against the World,' and 'All Eyez on Me.' His music blended emotional vulnerability, political commentary, storytelling, and aggressive lyricism, helping redefine the scope of rap music.",
+    "Beyond music, Tupac also built a successful acting career with performances in films such as 'Juice,' 'Poetic Justice,' 'Above the Rim,' and 'Gridlock’d.' His charisma and screen presence demonstrated his versatility as an entertainer.",
+    "Tupac became heavily associated with the East Coast–West Coast hip-hop rivalry of the 1990s, particularly after signing with Death Row Records. The rivalry, media controversies, and legal troubles surrounding his life made him one of the most talked-about celebrities of the era.",
+    "On September 13, 1996, Tupac Shakur died in Las Vegas after being shot days earlier in a still-unsolved attack. Despite his short life, his cultural influence remains enormous, and he is remembered as one of the defining voices of modern hip-hop."
+  ],
+  highlights: [
+    { year: "1971", event: "Born in East Harlem, New York City." },
+    { year: "1991", event: "Releases debut album '2Pacalypse Now.'" },
+    { year: "1992", event: "Stars in the film 'Juice.'" },
+    { year: "1995", event: "Releases the acclaimed album 'Me Against the World.'" },
+    { year: "1996", event: "Releases 'All Eyez on Me.'" },
+    { year: "1996", event: "Dies in Las Vegas, Nevada." },
+  ],
+},
+
+{
+  slug: "oliver-cromwell",
+  name: "Oliver Cromwell",
+  title: "Lord Protector of the Commonwealth",
+  era: "Early Modern Era",
+  lifespan: "1599 – 1658",
+  origin: "Huntingdon, England",
+  image: cromwell,
+  tagline: "The military leader who overthrew the English monarchy and ruled the Commonwealth.",
+  bio: [
+    "Oliver Cromwell was an English military commander and statesman who played a central role in the English Civil War and the temporary abolition of the monarchy. Born into a gentry family in Huntingdon, he initially lived as a minor landowner before entering politics as a Member of Parliament.",
+    "During the English Civil War, Cromwell emerged as one of Parliament’s most capable military leaders. He organized the disciplined New Model Army, whose victories against Royalist forces proved decisive in defeating King Charles I.",
+    "Following the execution of Charles I in 1649, England became a republic known as the Commonwealth. Cromwell led military campaigns in Ireland and Scotland, campaigns that remain deeply controversial due to the brutality and destruction associated with them.",
+    "In 1653, Cromwell became Lord Protector, effectively ruling England, Scotland, and Ireland as a military-backed head of state. His government promoted certain forms of religious tolerance for Protestant groups while enforcing strict moral and social policies inspired by Puritan beliefs.",
+    "Cromwell’s rule brought political stability after years of civil war, but critics accused him of authoritarianism and undermining parliamentary government. After his death in 1658, the Commonwealth rapidly weakened, and the monarchy was restored in 1660.",
+    "Oliver Cromwell remains one of the most divisive figures in British history, viewed by some as a defender of parliamentary power and by others as a dictator responsible for harsh repression, especially in Ireland."
+  ],
+  highlights: [
+    { year: "1599", event: "Born in Huntingdon, England." },
+    { year: "1628", event: "Becomes a Member of Parliament." },
+    { year: "1642", event: "Joins the Parliamentary forces during the English Civil War." },
+    { year: "1645", event: "Helps lead the New Model Army to victory at Naseby." },
+    { year: "1649", event: "King Charles I is executed and the Commonwealth is established." },
+    { year: "1653", event: "Becomes Lord Protector of England, Scotland, and Ireland." },
+    { year: "1658", event: "Dies in London." },
+  ],
+},
+
+{
+  slug: "attila-the-hun",
+  name: "Attila the Hun",
+  title: "Ruler of the Hunnic Empire",
+  era: "Classical Era",
+  lifespan: "c. 406 – 453",
+  origin: "Pannonian Plain, Hunnic Empire",
+  image: attila,
+  tagline: "The feared conqueror who challenged both the Eastern and Western Roman Empires.",
+  bio: [
+    "Attila the Hun was the ruler of the Hunnic Empire from 434 until his death in 453 and one of the most feared military leaders of Late Antiquity. Under his rule, the Huns created a vast empire stretching across much of Central and Eastern Europe.",
+    "Initially ruling jointly with his brother Bleda, Attila later became the sole leader of the Huns. He launched repeated campaigns against the Eastern Roman Empire, forcing Constantinople to pay enormous tributes in exchange for peace.",
+    "Attila’s invasions devastated large parts of the Balkans and Gaul. In 451, he invaded Roman Gaul, leading to the famous Battle of the Catalaunian Plains, where a coalition of Roman and Visigothic forces halted his advance.",
+    "The following year, Attila invaded Italy, capturing and destroying several cities. Although he threatened Rome itself, factors such as disease, famine, and logistical difficulties contributed to his withdrawal.",
+    "Known in later Christian tradition as the 'Scourge of God,' Attila became a symbol of destruction and fear throughout Europe. However, historical sources also describe him as a capable diplomat and political strategist who maintained authority over a diverse tribal confederation.",
+    "Attila died unexpectedly in 453 during his wedding celebrations. Shortly after his death, the Hunnic Empire fragmented, but his reputation endured in both European history and legend for centuries."
+  ],
+  highlights: [
+    { year: "406", event: "Born into the ruling Hunnic dynasty." },
+    { year: "434", event: "Becomes co-ruler of the Huns alongside his brother Bleda." },
+    { year: "445", event: "Becomes sole ruler of the Hunnic Empire." },
+    { year: "447", event: "Launches devastating campaigns against the Eastern Roman Empire." },
+    { year: "451", event: "Invades Gaul and fights at the Battle of the Catalaunian Plains." },
+    { year: "452", event: "Invades northern Italy and threatens Rome." },
+    { year: "453", event: "Dies unexpectedly during his wedding celebrations." },
   ],
 },
 ];
