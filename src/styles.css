@@ -1,0 +1,287 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Windows XP Luna theme
+ * Blue title bars with glossy gradient, beige body, green Start button,
+ * Tahoma typography, Bliss wallpaper. */
+
+@theme inline {
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 5px;
+  --radius-xl: 8px;
+  --radius-2xl: 10px;
+  --radius-3xl: 12px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-display: "Tahoma", "Trebuchet MS", "Segoe UI", "Lucida Grande", sans-serif;
+  --font-sans: "Tahoma", "Trebuchet MS", "Segoe UI", "Lucida Grande", sans-serif;
+
+  /* XP Luna gradients */
+  --gradient-titlebar: linear-gradient(180deg,
+    #0a64d8 0%,
+    #1c80ee 8%,
+    #2f8eef 40%,
+    #2380e7 55%,
+    #1771d6 88%,
+    #0c5bca 100%);
+  --gradient-window-frame: linear-gradient(180deg, #2167de 0%, #1751c4 100%);
+  --gradient-body: linear-gradient(180deg, #f3f1e3 0%, #ece9d8 100%);
+  --gradient-aqua-btn: linear-gradient(180deg,
+    #f7faff 0%,
+    #cfe2fb 40%,
+    #a7c8f3 60%,
+    #d3e6fb 100%);
+  --gradient-aqua-btn-text: #0a3a8c;
+  --gradient-start-btn: linear-gradient(180deg,
+    #4cb14c 0%,
+    #3aa03a 40%,
+    #2c8b2c 60%,
+    #59bf5d 100%);
+  --gradient-chip: linear-gradient(180deg, #ffffff 0%, #e6efff 100%);
+
+  --shadow-window: 0 18px 60px -16px rgba(0, 30, 90, 0.55), 0 6px 16px -6px rgba(0, 0, 0, 0.25);
+  --shadow-button: inset 0 1px 0 rgba(255,255,255,0.85), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+:root {
+  --radius: 6px;
+
+  --background: oklch(0.95 0.005 90); /* xp beige body */
+  --foreground: oklch(0.18 0.005 250);
+
+  --card: oklch(0.98 0.005 90);
+  --card-foreground: oklch(0.18 0.005 250);
+
+  --popover: oklch(0.98 0.005 90);
+  --popover-foreground: oklch(0.18 0.005 250);
+
+  --primary: oklch(0.5 0.18 260); /* xp blue */
+  --primary-foreground: oklch(0.99 0 0);
+
+  --secondary: oklch(0.93 0.01 90);
+  --secondary-foreground: oklch(0.2 0.01 250);
+
+  --muted: oklch(0.93 0.01 90);
+  --muted-foreground: oklch(0.4 0.01 250);
+
+  --accent: oklch(0.6 0.18 145); /* xp green */
+  --accent-foreground: oklch(0.99 0 0);
+
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.78 0.04 240);
+  --input: oklch(0.95 0.01 240);
+  --ring: oklch(0.55 0.18 260);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html, body { min-height: 100%; }
+
+  body {
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    background-color: #5b9bd5;
+    background-image: url("/src/assets/bg-bliss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4 { font-family: var(--font-display); }
+}
+
+@layer components {
+  /* The XP "window" — blue frame around beige body */
+  .aero-pane {
+    position: relative;
+    background: var(--gradient-window-frame);
+    border-radius: 10px 10px 6px 6px;
+    padding: 0;
+    box-shadow: var(--shadow-window);
+    border: 1px solid #0a3a8c;
+    overflow: hidden;
+  }
+
+  /* When used directly as a single block (no internal titlebar),
+     fall back to beige body for legibility. */
+  .aero-pane.body {
+    background: var(--gradient-body);
+    border-radius: 6px;
+  }
+
+  /* Inner section frame (like a groupbox / mini-window) */
+  .aero-frame {
+    background: var(--gradient-body);
+    border: 1px solid #7e9bc2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 #ffffff;
+    color: var(--foreground);
+    overflow: hidden;
+  }
+
+  /* The iconic XP blue titlebar */
+  .aero-titlebar {
+    position: relative;
+    background: var(--gradient-titlebar);
+    border-bottom: 1px solid #0a3a8c;
+    padding: 6px 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.55);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .aero-titlebar.lg {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* aqua xp button */
+  .aero-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--gradient-aqua-btn-text);
+    background: var(--gradient-aqua-btn);
+    border: 1px solid #4a7cc4;
+    border-radius: 999px;
+    box-shadow: var(--shadow-button);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+    transition: filter 0.12s ease, transform 0.1s ease;
+  }
+
+  .aero-button:hover { filter: brightness(1.05); }
+  .aero-button:active { transform: translateY(1px); filter: brightness(0.95); }
+
+  /* The green Start-button style */
+  .aero-button.leaf {
+    background: var(--gradient-start-btn);
+    color: #ffffff;
+    border-color: #1f6b1f;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
+  }
+
+  /* Tabs / sidebar nav buttons */
+  .aero-navbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 6px 12px;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(180deg, #4f95ed 0%, #1f6dd6 100%);
+    border: 1px solid #0a3a8c;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+    transition: filter 0.12s ease;
+    text-decoration: none;
+  }
+
+  .aero-navbtn:hover { filter: brightness(1.08); }
+
+  .aero-navbtn.active {
+    background: var(--gradient-start-btn);
+    border-color: #1f6b1f;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
+  }
+
+  .aero-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0a3a8c;
+    background: var(--gradient-chip);
+    border: 1px solid #7e9bc2;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+    letter-spacing: 0.02em;
+  }
+
+  .aero-chip.aqua {
+    background: var(--gradient-aqua-btn);
+    color: #0a3a8c;
+  }
+
+  .aero-chip.leaf {
+    background: var(--gradient-start-btn);
+    border-color: #1f6b1f;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
+  }
+
+  /* Figure card — beige Luna pane with thin blue border */
+  .figure-card {
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-body);
+    border: 1px solid #7e9bc2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 #ffffff, 0 4px 10px -4px rgba(0,0,0,0.25);
+    transition: filter 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    color: var(--foreground);
+  }
+
+  .figure-card:hover {
+    filter: brightness(1.03);
+    transform: translateY(-2px);
+    box-shadow: inset 0 1px 0 #ffffff, 0 10px 22px -8px rgba(0, 30, 90, 0.45);
+  }
+
+  /* XP-y embossed shine for headlines */
+  .text-shine {
+    color: #0a3a8c;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  }
+
+  .text-glow { text-shadow: 0 1px 2px rgba(0,0,0,0.45); }
+}
+
+@keyframes float-bubble {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-14px) translateX(6px); }
+}
+
+.float-slow { animation: float-bubble 9s ease-in-out infinite; }
+.float-med { animation: float-bubble 7s ease-in-out infinite; }
+.float-fast { animation: float-bubble 5s ease-in-out infinite; }
