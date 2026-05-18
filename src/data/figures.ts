@@ -209,7 +209,6 @@ export const figures: Figure[] = [
     { year: "1991", event: "Releases debut album '2Pacalypse Now.'" },
     { year: "1992", event: "Stars in the film 'Juice.'" },
     { year: "1995", event: "Releases the acclaimed album 'Me Against the World.'" },
-    { year: "1996", event: "Releases 'All Eyez on Me.'" },
     { year: "1996", event: "Dies in Las Vegas, Nevada." },
   ],
 },
