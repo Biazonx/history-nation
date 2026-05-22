@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "A frutiger-aero / Windows Vista style encyclopedia of historical figures. Rich biographies, timelines, and stories.",
+          "Uma enciclopédia de figuras históricas em estilo Frutiger Aero e Windows Vista, com biografias ricas, linhas do tempo e histórias.",
       },
     ],
   }),
@@ -26,17 +26,15 @@ function Home() {
     <>
       <Header />
       <main className="mx-auto max-w-6xl px-4 pt-6 pb-4">
-        {/* MAIN AERO WINDOW */}
         <div className="aero-pane overflow-hidden p-3 md:p-5">
-          {/* HERO TITLEBAR */}
           <section className="aero-frame relative overflow-hidden">
             <div className="aero-titlebar lg flex items-center justify-between">
               <span className="flex items-center gap-2">
                 <BookOpen className="h-4 w-4 text-[oklch(0.75_0.18_200)]" />
-                History Nation — Welcome
+                History Nation — Bem-vindo
               </span>
               <span className="hidden text-xs font-normal text-muted-foreground sm:inline">
-                v1.0 — Aero Edition
+                v1.0 — Edição Aero
               </span>
             </div>
 
@@ -45,38 +43,37 @@ function Home() {
               <div className="relative px-6 pt-12 pb-14 text-center md:px-10 md:pt-16 md:pb-20">
                 <span className="aero-chip aqua">
                   <Sparkles className="h-3.5 w-3.5" />
-                  An archive of remarkable lives
+                  Um arquivo de vidas extraordinárias
                 </span>
                 <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
-                  <span className="text-shine">The people</span>
+                  <span className="text-shine">As pessoas</span>
                   <br />
-                  <span className="text-foreground text-glow">who shaped the world.</span>
+                  <span className="text-foreground text-glow">que moldaram o mundo.</span>
                 </h1>
                 <p className="mx-auto mt-5 max-w-xl text-base text-foreground/80 md:text-lg">
-                  Dive into glossy, illustrated biographies of history's most fascinating
-                  historical figures.
+                  Mergulhe em biografias ilustradas e brilhantes de algumas das figuras
+                  mais fascinantes da história.
                 </p>
 
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                   <Link to="/figures" className="aero-button">
                     <BookOpen className="h-4 w-4" />
-                    Browse all figures
+                    Ver todas as figuras
                   </Link>
                   <Link to="/eras" className="aero-button leaf">
                     <Compass className="h-4 w-4" />
-                    Travel by era
+                    Viajar por era
                   </Link>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* STATS ROW */}
           <section className="mt-5 grid grid-cols-3 gap-3">
             {[
-              { n: figures.length.toString(), l: "Figures", Icon: Users },
+              { n: figures.length.toString(), l: "Figuras", Icon: Users },
               { n: "4", l: "Eras", Icon: Clock },
-              { n: "∞", l: "Curiosity", Icon: BookOpen },
+              { n: "∞", l: "Curiosidade", Icon: BookOpen },
             ].map(({ n, l, Icon }) => (
               <div key={l} className="aero-frame p-4 text-center">
                 <Icon className="mx-auto h-4 w-4 text-[oklch(0.75_0.18_200)]" />
@@ -88,18 +85,17 @@ function Home() {
             ))}
           </section>
 
-          {/* FEATURED FIGURES */}
           <section className="aero-frame mt-5 overflow-hidden">
             <div className="aero-titlebar flex items-center justify-between">
               <span className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-[oklch(0.7_0.2_145)]" />
-                Featured Figures
+                Figuras em destaque
               </span>
               <Link
                 to="/figures"
                 className="inline-flex items-center gap-1 text-xs font-semibold text-[oklch(0.78_0.18_200)] hover:underline"
               >
-                See all <ArrowRight className="h-3.5 w-3.5" />
+                Ver tudo <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
 
@@ -132,7 +128,7 @@ function Home() {
                   <div className="p-4">
                     <p className="line-clamp-2 text-sm text-foreground/80">{f.tagline}</p>
                     <div className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[oklch(0.78_0.18_200)]">
-                      Read biography <ArrowRight className="h-4 w-4" />
+                      Ler biografia <ArrowRight className="h-4 w-4" />
                     </div>
                   </div>
                 </Link>
@@ -140,22 +136,21 @@ function Home() {
             </div>
           </section>
 
-          {/* CTA STRIP */}
           <section className="aero-frame mt-5 overflow-hidden">
-            <div className="aero-titlebar">A whole world of stories</div>
+            <div className="aero-titlebar">Um mundo inteiro de histórias</div>
             <div className="relative grid items-center gap-6 p-6 md:grid-cols-[1fr_auto] md:p-8">
               <Bubbles />
               <div className="relative">
                 <h3 className="text-2xl font-bold md:text-3xl">
-                  One archive, <span className="text-shine">countless lives.</span>
+                  Um arquivo, <span className="text-shine">incontáveis vidas.</span>
                 </h3>
                 <p className="mt-2 max-w-xl text-foreground/75">
-                  Every figure has a dedicated page with images, a written biography,
-                  and a timeline of the moments that mattered.
+                  Cada figura tem uma página própria com imagens, uma biografia escrita
+                  e uma linha do tempo com os momentos que mais importaram.
                 </p>
               </div>
               <Link to="/figures" className="aero-button relative">
-                Start exploring <ArrowRight className="h-4 w-4" />
+                Começar a explorar <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </section>

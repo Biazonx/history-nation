@@ -7,8 +7,11 @@ import { Clock } from "lucide-react";
 export const Route = createFileRoute("/eras")({
   head: () => ({
     meta: [
-      { title: "History Nation — Browse by Era" },
-      { name: "description", content: "Travel through history era by era — ancient world, Renaissance, modern era, and more." },
+      { title: "History Nation — Navegar por Era" },
+      {
+        name: "description",
+        content: "Viaje pela história era por era — mundo antigo, medieval, era moderna e muito mais.",
+      },
     ],
   }),
   component: ErasPage,
@@ -28,14 +31,14 @@ function ErasPage() {
           <section className="aero-frame overflow-hidden">
             <div className="aero-titlebar lg flex items-center gap-2">
               <Clock className="h-4 w-4 text-[oklch(0.7_0.2_145)]" />
-              Browse by Era
+              Navegar por Era
             </div>
             <div className="p-6">
               <h1 className="text-3xl font-bold md:text-4xl">
-                Travel through <span className="text-shine">time</span>
+                Viaje pelo <span className="text-shine">tempo</span>
               </h1>
               <p className="mt-2 max-w-xl text-foreground/75">
-                Pick an era and meet the people who defined it.
+                Escolha uma era e conheça as pessoas que a definiram.
               </p>
 
               <div className="mt-7 space-y-5">
@@ -43,7 +46,7 @@ function ErasPage() {
                   <section key={era} className="aero-frame overflow-hidden">
                     <div className="aero-titlebar flex items-center justify-between">
                       <span>{era}</span>
-                      <span className="aero-chip">{list.length} figures</span>
+                      <span className="aero-chip">{list.length} figuras</span>
                     </div>
                     <ul className="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-3">
                       {list.map((f) => (

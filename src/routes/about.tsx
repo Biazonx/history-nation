@@ -7,8 +7,11 @@ import { Info } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "History Nation — About" },
-      { name: "description", content: "About History Nation — a frutiger-aero encyclopedia for history fans." },
+      { title: "History Nation — Sobre" },
+      {
+        name: "description",
+        content: "Sobre o History Nation — uma enciclopédia frutiger-aero para fãs de história.",
+      },
     ],
   }),
   component: About,
@@ -23,30 +26,30 @@ function About() {
           <section className="aero-frame relative overflow-hidden">
             <div className="aero-titlebar lg flex items-center gap-2">
               <Info className="h-4 w-4 text-[oklch(0.75_0.18_200)]" />
-              About History Nation
+              Sobre o History Nation
             </div>
             <Bubbles />
             <div className="relative space-y-4 p-6 text-foreground/85">
               <h1 className="text-3xl font-bold md:text-4xl">
-                A glossy, nostalgic <span className="text-shine">home for history</span>
+                Um lar nostálgico e brilhante <span className="text-shine">para a história</span>
               </h1>
               <p>
-                History Nation is a passion project for people who love stories about
-                the past — the lives, accidents, ideas, and decisions that nudged the
-                world toward what it is today.
+                History Nation é um projeto de paixão para quem ama histórias
+                sobre o passado — as vidas, os acidentes, as ideias e as decisões que
+                empurraram o mundo até se tornar o que é hoje.
               </p>
               <p>
-                We wrap those stories in the visual language of mid-2000s
-                "Frutiger Aero" — Windows Vista chrome, glossy glass, green grass,
-                and floating bubbles. Optimistic, nostalgic, and made for clicking
-                around on a Sunday afternoon.
+                Revestimos essas histórias com a linguagem visual do
+                "Frutiger Aero" do meio dos anos 2000 — vidro brilhante, clima de
+                Windows Vista, grama verde e bolhas flutuando. Otimista, nostálgico
+                e feito para navegar sem pressa numa tarde de domingo.
               </p>
               <p>
-                Every figure has a dedicated page with images, a written biography,
-                and a timeline of key moments. New figures are added regularly.
+                Cada figura tem uma página dedicada com imagens, uma biografia escrita
+                e uma linha do tempo com momentos-chave. Novas figuras são adicionadas regularmente.
               </p>
               <div className="pt-2">
-                <Link to="/figures" className="aero-button">Browse the figures</Link>
+                <Link to="/figures" className="aero-button">Ver as figuras</Link>
               </div>
             </div>
           </section>

@@ -13,7 +13,8 @@ export function Footer() {
                   className="grid h-9 w-9 place-items-center rounded-md"
                   style={{
                     background: "var(--gradient-aqua-btn)",
-                    boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.6), 0 0 14px oklch(0.7 0.2 200 / 0.5)",
+                    boxShadow:
+                      "inset 0 1px 0 oklch(1 0 0 / 0.6), 0 0 14px oklch(0.7 0.2 200 / 0.5)",
                   }}
                   aria-hidden
                 >
@@ -22,22 +23,22 @@ export function Footer() {
                 <span className="text-base font-bold text-shine">History Nation</span>
               </div>
               <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-                A living encyclopedia of the people who shaped human history, wrapped
-                in a glossy Aero-glass interface for the curious.
+                Uma enciclopédia viva das pessoas que moldaram a história humana,
+                envolta em uma interface brilhante em estilo Aero para os curiosos.
               </p>
             </div>
 
             <div>
-              <h4 className="text-base font-bold text-shine">Explore</h4>
+              <h4 className="text-base font-bold text-shine">Explorar</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/figures" className="hover:text-primary">All figures</Link></li>
-                <li><Link to="/eras" className="hover:text-primary">By era</Link></li>
-                <li><Link to="/about" className="hover:text-primary">About the project</Link></li>
+                <li><Link to="/figures" className="hover:text-primary">Todas as figuras</Link></li>
+                <li><Link to="/eras" className="hover:text-primary">Por era</Link></li>
+                <li><Link to="/about" className="hover:text-primary">Sobre o projeto</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-base font-bold text-shine">Follow</h4>
+              <h4 className="text-base font-bold text-shine">Acompanhe</h4>
               <div className="flex gap-2">
                 <a
                   href="https://github.com/Biazonx"
@@ -57,7 +58,7 @@ export function Footer() {
         </div>
 
         <p className="mt-5 text-center text-xs text-white text-glow">
-          © {new Date().getFullYear()} History Nation — made for the curious.
+          © {new Date().getFullYear()} History Nation — feito para os curiosos.
         </p>
       </div>
     </footer>

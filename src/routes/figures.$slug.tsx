@@ -14,7 +14,7 @@ export const Route = createFileRoute("/figures/$slug")({
   },
   head: ({ loaderData }) => {
     const f = loaderData?.figure;
-    if (!f) return { meta: [{ title: "History Nation — Figure not found" }] };
+    if (!f) return { meta: [{ title: "History Nation — Figura não encontrada" }] };
     return {
       meta: [
         { title: `History Nation — ${f.name}` },
@@ -30,9 +30,9 @@ export const Route = createFileRoute("/figures/$slug")({
       <Header />
       <main className="mx-auto max-w-3xl px-4 py-20 text-center">
         <div className="aero-pane p-10">
-          <h1 className="text-3xl font-bold">Figure not found</h1>
-          <p className="mt-3 text-muted-foreground">We couldn't find that historical figure.</p>
-          <Link to="/figures" className="aero-button mt-6 inline-flex">Back to all figures</Link>
+          <h1 className="text-3xl font-bold">Figura não encontrada</h1>
+          <p className="mt-3 text-muted-foreground">Não conseguimos encontrar essa figura histórica.</p>
+          <Link to="/figures" className="aero-button mt-6 inline-flex">Voltar para todas as figuras</Link>
         </div>
       </main>
       <Footer />
@@ -43,9 +43,9 @@ export const Route = createFileRoute("/figures/$slug")({
       <Header />
       <main className="mx-auto max-w-3xl px-4 py-20 text-center">
         <div className="aero-pane p-10">
-          <h1 className="text-3xl font-bold">Something went wrong</h1>
+          <h1 className="text-3xl font-bold">Algo deu errado</h1>
           <p className="mt-3 text-muted-foreground">{error.message}</p>
-          <button onClick={reset} className="aero-button mt-6">Try again</button>
+          <button onClick={reset} className="aero-button mt-6">Tentar novamente</button>
         </div>
       </main>
       <Footer />
@@ -65,18 +65,17 @@ function FigurePage() {
       <Header />
       <main className="mx-auto max-w-6xl px-4 pt-6 pb-4">
         <div className="aero-pane p-3 md:p-5">
-          {/* TITLEBAR */}
           <section className="aero-frame overflow-hidden">
             <div className="aero-titlebar lg flex items-center justify-between">
               <span className="flex items-center gap-2 truncate">
                 <BookOpen className="h-4 w-4 text-[oklch(0.75_0.18_200)]" />
-                <span className="truncate">Biography · {f.name}</span>
+                <span className="truncate">Biografia · {f.name}</span>
               </span>
               <Link
                 to="/figures"
                 className="inline-flex items-center gap-1 text-xs font-semibold text-[oklch(0.78_0.18_200)] hover:underline"
               >
-                <ArrowLeft className="h-3.5 w-3.5" /> All figures
+                <ArrowLeft className="h-3.5 w-3.5" /> Todas as figuras
               </Link>
             </div>
 
@@ -113,12 +112,11 @@ function FigurePage() {
             </div>
           </section>
 
-          {/* BIO + TIMELINE */}
           <section className="mt-5 grid gap-5 md:grid-cols-[1.6fr_1fr]">
             <article className="aero-frame overflow-hidden">
               <div className="aero-titlebar flex items-center gap-2">
                 <BookOpen className="h-4 w-4 text-[oklch(0.75_0.18_200)]" />
-                Biography
+                Biografia
               </div>
               <div className="space-y-5 p-6 text-[1.02rem] leading-relaxed text-foreground/85">
                 {f.bio.map((p, i) => (
@@ -130,7 +128,7 @@ function FigurePage() {
             <aside className="aero-frame overflow-hidden self-start md:sticky md:top-24">
               <div className="aero-titlebar flex items-center gap-2">
                 <ListOrdered className="h-4 w-4 text-[oklch(0.7_0.2_145)]" />
-                Key moments
+                Momentos-chave
               </div>
               <ol className="space-y-4 p-5">
                 {f.highlights.map((h) => (
@@ -152,7 +150,6 @@ function FigurePage() {
             </aside>
           </section>
 
-          {/* prev / next */}
           <section className="mt-5 grid gap-4 sm:grid-cols-2">
             <Link
               to="/figures/$slug"
@@ -161,7 +158,7 @@ function FigurePage() {
             >
               <ArrowLeft className="h-5 w-5 text-[oklch(0.78_0.18_200)]" />
               <div>
-                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Previous</div>
+                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Anterior</div>
                 <div className="font-semibold">{prev.name}</div>
               </div>
             </Link>
@@ -171,7 +168,7 @@ function FigurePage() {
               className="aero-frame flex items-center justify-end gap-3 p-4 text-right transition-transform hover:-translate-y-0.5"
             >
               <div>
-                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Next</div>
+                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Próxima</div>
                 <div className="font-semibold">{next.name}</div>
               </div>
               <ArrowRight className="h-5 w-5 text-[oklch(0.78_0.18_200)]" />

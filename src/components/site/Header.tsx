@@ -2,10 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { Globe2, Home, Users, Clock, Info } from "lucide-react";
 
 const NAV = [
-  { to: "/" as const, label: "Home", Icon: Home },
-  { to: "/figures" as const, label: "Figures", Icon: Users },
+  { to: "/" as const, label: "Início", Icon: Home },
+  { to: "/figures" as const, label: "Figuras", Icon: Users },
   { to: "/eras" as const, label: "Eras", Icon: Clock },
-  { to: "/about" as const, label: "About", Icon: Info },
+  { to: "/about" as const, label: "Sobre", Icon: Info },
 ];
 
 export function Header() {
@@ -36,7 +36,7 @@ export function Header() {
             <span className="flex flex-col leading-none">
               <span className="text-base font-bold text-shine">History Nation</span>
               <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                Lives that shaped the world
+                Vidas que moldaram o mundo
               </span>
             </span>
           </Link>
@@ -57,7 +57,7 @@ export function Header() {
           </nav>
 
           <Link to="/figures" className="aero-button text-xs">
-            Explore
+            Explorar
           </Link>
         </div>
       </div>
