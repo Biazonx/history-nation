@@ -10,7 +10,7 @@ import attila from "@/assets/figure-attila.jpg";
 import paul from "@/assets/figure-paul.jpg";
 import tokugawa from "@/assets/figure-tokugawa.jpg";
 import xiuquan from "@/assets/figure-xiuquan.jpg";
-import alan_turing from "@/assets/figure-alan-turing.jpg";
+import alan_turing from "@/assets/figure-alan_turing.jpg";
 import edward_teach from "@/assets/figure-edward_teach.jpg";
 import abd_al_rahman_i from "@/assets/figure-abd_al_rahman_i.jpg";
 import confucius from "@/assets/figure-confucius.jpg";
