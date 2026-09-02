@@ -346,7 +346,7 @@ export const figures: Figure[] = [
     lifespan: "551–479 a.C.",
     origin: "Zou, Estado de Lu (China)",
     image: confucius,
-    tagline: "Fundador do Confucianismo e Mestre da Ética",
+    tagline: "Fundador do Confucianismo e Mestre da Ética.",
     bio: [
       "Confúcio foi um influente filósofo, professor e mestre político chinês cujos ensinamentos moldaram profundamente a cultura, a sociedade e a governança do Leste Asiático ao longo de milênios.",
       "Vivendo durante o turbulento Período das Primaveras e Outonos, buscou restaurar a ordem social e moral por meio do resgate dos ritos tradicionais, da virtude e do respeito à hierarquia familiar e política.",
@@ -370,7 +370,7 @@ export const figures: Figure[] = [
     lifespan: "731–788",
     origin: "Damasco, Califado Omíada",
     image: abd_al_rahman_i,
-    tagline: "Fundador do Emirado Independente de Córdoba",
+    tagline: "Fundador do Emirado Independente de Córdoba.",
     bio: [
       "Abd al-Rahman I, também conhecido como 'O Falcão dos Omíadas', foi o fundador do Emirado Independente de Córdoba na Península Ibérica, dando início à dinastia Omíada na região.",
       "Após a queda de sua família na Revolução Abássida em 750, escapou do massacre na Síria e viveu anos em fuga através do Norte da África até alcançar a Península Ibérica.",
@@ -396,7 +396,7 @@ export const figures: Figure[] = [
     lifespan: "1680–1718",
     origin: "Bristol, Inglaterra",
     image: edward_teach,
-    tagline: "O Infame Pirata Barba Negra",
+    tagline: "O Infame Pirata Barba Negra.",
     bio: [
       "Edward Teach, mais conhecido como Barba Negra, foi um dos piratas mais notórios e temidos que operaram no Caribe e na costa atlântica das colônias americanas.",
       "Iniciou sua carreira nos mares como corsário durante a Guerra da Sucessão Espanhola antes de se juntar à tripulação do pirata Benjamin Hornigold em Nassau, nas Bahamas.",
@@ -417,7 +417,7 @@ export const figures: Figure[] = [
     slug: "alan-turing",
     name: "Alan Turing",
     title: "Matemático e Pai da Computação",
-    era: "Era Contemporânea",
+    era: "Era Moderna",
     lifespan: "1912–1954",
     origin: "Londres, Inglaterra",
     image: alan_turing,
