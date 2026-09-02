@@ -31,10 +31,10 @@ function Home() {
             <div className="aero-titlebar lg flex items-center justify-between">
               <span className="flex items-center gap-2">
                 <BookOpen className="h-4 w-4 text-[oklch(0.75_0.18_200)]" />
-                History Nation — Bem-vindo
+                History Nation - Bem-vindo
               </span>
               <span className="hidden text-xs font-normal text-muted-foreground sm:inline">
-                v1.0 — Edição Aero
+                Edição Aero
               </span>
             </div>
 
@@ -48,7 +48,7 @@ function Home() {
                 <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
                   <span className="text-shine">As pessoas</span>
                   <br />
-                  <span className="text-foreground text-glow">que moldaram o mundo.</span>
+                  <span className="text-foreground text-glow">que moldaram o mundo</span>
                 </h1>
                 <p className="mx-auto mt-5 max-w-xl text-base text-foreground/80 md:text-lg">
                   Mergulhe em biografias ilustradas e brilhantes de algumas das figuras

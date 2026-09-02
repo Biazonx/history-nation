@@ -7,7 +7,7 @@ import { ArrowRight, Users } from "lucide-react";
 export const Route = createFileRoute("/figures/")({
   head: () => ({
     meta: [
-      { title: "History Nation — Todas as Figuras" },
+      { title: "History Nation - Todas as Figuras" },
       {
         name: "description",
         content: "Veja todas as figuras históricas do History Nation, da Antiguidade à era Moderna.",
@@ -36,7 +36,7 @@ function FiguresIndex() {
                 O elenco completo <span className="text-shine">da história</span>
               </h1>
               <p className="mt-2 max-w-xl text-foreground/75">
-                {figures.length} vidas — e contando. Escolha uma e mergulhe.
+                {figures.length} vidas e contando. Escolha uma e mergulhe.
               </p>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -7,10 +7,10 @@ import { Info } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "History Nation — Sobre" },
+      { title: "History Nation - Sobre" },
       {
         name: "description",
-        content: "Sobre o History Nation — uma enciclopédia frutiger-aero para fãs de história.",
+        content: "Sobre o History Nation - uma enciclopédia frutiger-aero para fãs de história.",
       },
     ],
   }),
@@ -35,12 +35,12 @@ function About() {
               </h1>
               <p>
                 History Nation é um projeto de paixão para quem ama histórias
-                sobre o passado — as vidas, os acidentes, as ideias e as decisões que
+                sobre o passado: as vidas, os acidentes, as ideias e as decisões que
                 empurraram o mundo até se tornar o que é hoje.
               </p>
               <p>
                 Revestimos essas histórias com a linguagem visual do
-                "Frutiger Aero" do meio dos anos 2000 — vidro brilhante, clima de
+                "Frutiger Aero" do meio dos anos 2000. Vidro brilhante, clima de
                 Windows Vista, grama verde e bolhas flutuando. Otimista, nostálgico
                 e feito para navegar sem pressa numa tarde de domingo.
               </p>

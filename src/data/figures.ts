@@ -1,5 +1,5 @@
-import genghiskhan from "@/assets/figure-genghiskhan.jpg";
 import ashoka from "@/assets/figure-ashoka.jpg";
+import genghiskhan from "@/assets/figure-genghiskhan.jpg";
 import cortes from "@/assets/figure-cortes.jpg";
 import zizka from "@/assets/figure-zizka.jpg";
 import sigurd from "@/assets/figure-sigurd.jpg";
@@ -25,6 +25,32 @@ export type Figure = {
 };
 
 export const figures: Figure[] = [
+    {
+    slug: "ashoka-the-great",
+    name: "Ashoka, o Grande",
+    title: "Imperador do Império Máuria",
+    era: "Era Clássica",
+    lifespan: "304–232 a.C.",
+    origin: "Pataliputra, Império Máuria",
+    image: ashoka,
+    tagline: "O imperador que transformou a conquista em uma filosofia de paz e compaixão.",
+    bio: [
+      "Ashoka, o Grande, foi o terceiro governante do Império Máuria e um dos imperadores mais influentes da história da Índia. Herdou um dos maiores impérios do mundo antigo e o expandiu ainda mais por meio de campanhas militares pelo subcontinente indiano.",
+      "No início do reinado, Ashoka seguiu uma política expansionista agressiva, culminando na sangrenta conquista de Kalinga por volta de 261 a.C. O sofrimento provocado pela guerra o afetou profundamente e marcou a grande virada de sua vida.",
+      "Depois da Guerra de Kalinga, Ashoka abraçou o budismo e adotou uma política voltada para a não violência, a boa governança e o bem-estar social. Promoveu tolerância religiosa, construiu estradas e hospitais, plantou árvores para viajantes e incentivou a compaixão por humanos e animais.",
+      "Ashoka difundiu ensinamentos budistas pela Ásia ao apoiar missionários e instituições religiosas. Sob seu patrocínio, o budismo ultrapassou as fronteiras da Índia e alcançou regiões como Sri Lanka e Ásia Central.",
+      "Suas ideias ficaram registradas nos famosos Editos de Ashoka, gravados em rochas e pilares por todo o império. Hoje, ele é lembrado como símbolo de liderança sábia e compassiva, e seu legado continua ligado à identidade histórica da Índia.",
+    ],
+    highlights: [
+      { year: "304 a.C.", event: "Nasce em Pataliputra, capital do Império Máuria." },
+      { year: "268 a.C.", event: "Sobe ao trono máuria." },
+      { year: "261 a.C.", event: "Conquista Kalinga em uma guerra devastadora." },
+      { year: "260 a.C.", event: "Abraça o budismo após testemunhar os horrores da guerra." },
+      { year: "250 a.C.", event: "Promove missões budistas por várias regiões da Ásia." },
+      { year: "249 a.C.", event: "Visita importantes locais de peregrinação budista." },
+      { year: "232 a.C.", event: "Morre após um reinado longo e influente." },
+    ],
+  },
   {
     slug: "genghis-khan",
     name: "Genghis Khan",
@@ -49,32 +75,6 @@ export const figures: Figure[] = [
       { year: "1219", event: "Invade o Império Corásmio na Ásia Central." },
       { year: "1223", event: "As forças mongóis vencem a Batalha do Rio Kalka." },
       { year: "1227", event: "Morre durante uma campanha contra a dinastia Xia Ocidental." },
-    ],
-  },
-  {
-    slug: "ashoka-the-great",
-    name: "Ashoka, o Grande",
-    title: "Imperador do Império Máuria",
-    era: "Era Clássica",
-    lifespan: "304–232 a.C.",
-    origin: "Pataliputra, Império Máuria",
-    image: ashoka,
-    tagline: "O imperador que transformou a conquista em uma filosofia de paz e compaixão.",
-    bio: [
-      "Ashoka, o Grande, foi o terceiro governante do Império Máuria e um dos imperadores mais influentes da história da Índia. Herdou um dos maiores impérios do mundo antigo e o expandiu ainda mais por meio de campanhas militares pelo subcontinente indiano.",
-      "No início do reinado, Ashoka seguiu uma política expansionista agressiva, culminando na sangrenta conquista de Kalinga por volta de 261 a.C. O sofrimento provocado pela guerra o afetou profundamente e marcou a grande virada de sua vida.",
-      "Depois da Guerra de Kalinga, Ashoka abraçou o budismo e adotou uma política voltada para a não violência, a boa governança e o bem-estar social. Promoveu tolerância religiosa, construiu estradas e hospitais, plantou árvores para viajantes e incentivou a compaixão por humanos e animais.",
-      "Ashoka difundiu ensinamentos budistas pela Ásia ao apoiar missionários e instituições religiosas. Sob seu patrocínio, o budismo ultrapassou as fronteiras da Índia e alcançou regiões como Sri Lanka e Ásia Central.",
-      "Suas ideias ficaram registradas nos famosos Editos de Ashoka, gravados em rochas e pilares por todo o império. Hoje, ele é lembrado como símbolo de liderança sábia e compassiva, e seu legado continua ligado à identidade histórica da Índia.",
-    ],
-    highlights: [
-      { year: "304 a.C.", event: "Nasce em Pataliputra, capital do Império Máuria." },
-      { year: "268 a.C.", event: "Sobe ao trono máuria." },
-      { year: "261 a.C.", event: "Conquista Kalinga em uma guerra devastadora." },
-      { year: "260 a.C.", event: "Abraça o budismo após testemunhar os horrores da guerra." },
-      { year: "250 a.C.", event: "Promove missões budistas por várias regiões da Ásia." },
-      { year: "249 a.C.", event: "Visita importantes locais de peregrinação budista." },
-      { year: "232 a.C.", event: "Morre após um reinado longo e influente." },
     ],
   },
   {

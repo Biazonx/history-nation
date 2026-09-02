@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <p className="mt-5 text-center text-xs text-white text-glow">
-          © {new Date().getFullYear()} History Nation — feito para os curiosos.
+          © {new Date().getFullYear()} History Nation. 
         </p>
       </div>
     </footer>

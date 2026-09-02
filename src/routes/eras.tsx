@@ -7,10 +7,10 @@ import { Clock } from "lucide-react";
 export const Route = createFileRoute("/eras")({
   head: () => ({
     meta: [
-      { title: "History Nation — Navegar por Era" },
+      { title: "History Nation - Navegar por Era" },
       {
         name: "description",
-        content: "Viaje pela história era por era — mundo antigo, medieval, era moderna e muito mais.",
+        content: "Viaje pela história era por era: mundo antigo, medieval, era moderna e muito mais.",
       },
     ],
   }),
