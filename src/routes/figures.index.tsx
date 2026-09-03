@@ -4,6 +4,8 @@ import { Footer } from "@/components/site/Footer";
 import { figures } from "@/data/figures";
 import { ArrowRight, Users } from "lucide-react";
 
+const lockedEraName = "Era Perdida";
+
 export const Route = createFileRoute("/figures/")({
   head: () => ({
     meta: [
@@ -18,6 +20,8 @@ export const Route = createFileRoute("/figures/")({
 });
 
 function FiguresIndex() {
+  const publicFigures = figures.filter((figure) => figure.era !== lockedEraName);
+
   return (
     <>
       <Header />
@@ -29,18 +33,18 @@ function FiguresIndex() {
                 <Users className="h-4 w-4 text-[oklch(0.7_0.2_145)]" />
                 Todas as Figuras
               </span>
-              <span className="aero-chip">{figures.length} entradas</span>
+              <span className="aero-chip">{publicFigures.length} entradas</span>
             </div>
             <div className="p-6">
               <h1 className="text-3xl font-bold md:text-4xl">
                 O elenco completo <span className="text-shine">da história</span>
               </h1>
               <p className="mt-2 max-w-xl text-foreground/75">
-                {figures.length} vidas e contando. Escolha uma e mergulhe.
+                {publicFigures.length} vidas e contando. Escolha uma e mergulhe.
               </p>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {figures.map((f) => (
+                {publicFigures.map((f) => (
                   <Link
                     key={f.slug}
                     to="/figures/$slug"

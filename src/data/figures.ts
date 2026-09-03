@@ -14,6 +14,9 @@ import alan_turing from "@/assets/figure-alan_turing.jpg";
 import edward_teach from "@/assets/figure-edward_teach.jpg";
 import abd_al_rahman_i from "@/assets/figure-abd_al_rahman_i.jpg";
 import confucius from "@/assets/figure-confucius.jpg";
+import crash_bandicoot from "@/assets/figure-crash_bandicoot.jpg";
+import davy_jones from "@/assets/figure-davy_jones.jpg";
+import gohan from "@/assets/figure-gohan.jpg";
 
 export type Figure = {
   slug: string;
@@ -437,6 +440,79 @@ export const figures: Figure[] = [
       { year: "1950", event: "Propõe o 'Teste de Turing' no artigo 'Computing Machinery and Intelligence'." },
       { year: "1952", event: "É processado e condenado por homossexualidade, aceitando a castração química em vez da prisão." },
       { year: "1954", event: "Falece por envenenamento por cianeto em Wilmslow, Inglaterra." },
+    ],
+  },
+{
+    slug: "crash-bandicoot",
+    name: "Crash Bandicoot",
+    title: "Explorador e Herói",
+    era: "Era Perdida",
+    lifespan: "1996–Presente",
+    origin: "Austrália",
+    image: crash_bandicoot,
+    tagline: "Carlos El Topo Que Gira.",
+    bio: [
+      "Crash Bandicoot é um personagem fictício e o protagonista da série de jogos eletrônicos Crash Bandicoot. Criado por David Jaffe e desenvolvido pela Naughty Dog, Crash é um bandicoot que vive em uma ilha chamada Wumpa Island.",
+      "O personagem foi projetado para ser um herói que enfrenta desafios e perigos enquanto explora diferentes ambientes e encontra tesouros escondidos.",
+      "Crash Bandicoot se tornou um ícone da cultura pop dos anos 90, sendo reconhecido por sua personalidade animada e sua habilidade em resolver quebra-cabeças."
+    ],
+    highlights: [
+      { year: "1996", event: "Lança o jogo inicial 'Crash Bandicoot'." },
+      { year: "1997", event: "Lança 'Crash Bandicoot 2: Cortex Strikes Back'." },
+      { year: "1999", event: "Lança 'Crash Bandicoot: The Wrath of Cortex'." },
+      { year: "2000", event: "Lança 'Crash Nitro Kart'." },
+      { year: "2001", event: "Lança 'Crash Tag Team Racing'." },
+      { year: "2003", event: "Lança 'Crash of the Titans'." },
+    ],
+  },
+{
+    slug: "davy-jones",
+    name: "Davy Jones",
+    title: "YouTuber e Apresentador",
+    era: "Era Perdida",
+    lifespan: "1988–Presente",
+    origin: "Rio de Janeiro, Brasil",
+    image: davy_jones,
+    tagline: "O Mago dos Games.",
+    bio: [
+      "Davy Jones (Gustavo Sanches) é um dos criadores de conteúdo de jogos eletrônicos mais conhecidos do Brasil, idealizador e principal apresentador do canal Gameplayrj.",
+      "Iniciou sua trajetória na internet produzindo vídeos de jogos como Grand Theft Auto e Minecraft, expandindo rapidamente para coberturas de notícias, vlogs e react de eventos do mundo dos games.",
+      "Com a criação do ecossistema do Gameplayrj e a participação em podcasts renomados como o 'Flow Games', consolidou-se como uma das vozes mais influentes da comunidade gamer brasileira.",
+      "Ficou famoso por sua alta frequência de postagens diárias, análises apaixonadas sobre lançamentos de consoles e memes virais que marcaram a cultura gamer do YouTube no Brasil.",
+      "Além da produção de conteúdo, atua ativamente na cobertura dos maiores eventos globais de videogames, entrevistando desenvolvedores e analisando a indústria em tempo real."
+    ],
+    highlights: [
+      { year: "1988", event: "Nasce no Rio de Janeiro, Brasil." },
+      { year: "2011", event: "Cria o canal Gameplayrj no YouTube, focado inicialmente em gameplay e entretenimento." },
+      { year: "2015", event: "Alcança marcas históricas de inscritos e estabelece uma rotina intensa de múltiplos vídeos por dia." },
+      { year: "2020", event: "Expande sua atuação para podcasts e programas ao vivo focados no cenário de esportes e tecnologia." },
+      { year: "2022", event: "Cria e passa a apresentar o Flow Games, fortalecendo sua presença no mercado de mídias gamer." },
+    ],
+  },
+{
+    slug: "gohan",
+    name: "Son Gohan",
+    title: "Guerreiro Z e Filho de Goku",
+    era: "Era Perdida",
+    lifespan: "Ano 757–Presente",
+    origin: "Montanha Paozu, Terra",
+    image: gohan,
+    tagline: "O Meio-Saiyajin que não entende porra nenhuma.",
+    bio: [
+      "Son Gohan é um híbrido humano-saiyajin, primeiro filho de Son Goku e Chi-Chi, batizado em homenagem ao seu avô adotivo.",
+      "Apesar do desejo de sua mãe para que se tornasse um grande acadêmico, o destino o forçou a lutar desde a infância devido às constantes ameaças de invasores espaciais e androides ao planeta Terra.",
+      "Treinado inicialmente por Piccolo, com quem desenvolveu um profundo laço de afeto e respeito, demonstrou desde cedo um potencial oculto que ultrapassava o de qualquer saiyajin puro quando consumido pela raiva.",
+      "Atingiu o auge do seu poder ao se tornar o primeiro a alcançar a forma de Super Saiyajin 2 durante os Jogos de Cell, onde derrotou o vilão Cell e salvou o universo.",
+      "Mais tarde, após focar nos estudos e constituir família com Videl, reaprendeu a conciliar a vida acadêmica com seu papel de defensor da Terra, despertando novas transformações como a forma Beast."
+    ],
+    highlights: [
+      { year: "Ano 757", event: "Nasce na Montanha Paozu, filho de Goku e Chi-Chi." },
+      { year: "Ano 761", event: "É sequestrado por Raditz e desperta pela primeira vez seu poder oculto para salvar Goku." },
+      { year: "Ano 762", event: "Viaja para o planeta Namekusei para reunir as Esferas do Dragão e enfrentar as forças de Freeza." },
+      { year: "Ano 767", event: "Desperta o Super Saiyajin 2 e derrota Cell nos Jogos de Cell." },
+      { year: "Ano 774", event: "Desperta sua forma 'Gohan Definitivo' com a ajuda do Kaioshin de 15 Gerações e enfrenta Majin Boo." },
+      { year: "Ano 780", event: "Lidera a equipe do Universo 7 no Torneio do Poder para garantir a sobrevivência do seu universo." },
+      { year: "Ano 783", event: "Alcança a forma 'Gohan Beast' e derrota Cell Max durante o confronto contra a Força Red Ribbon." },
     ],
   },
 ];

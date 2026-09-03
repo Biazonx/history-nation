@@ -6,6 +6,8 @@ import { getFigure, figures } from "@/data/figures";
 import type { Figure } from "@/data/figures";
 import { ArrowLeft, ArrowRight, Calendar, MapPin, Clock, BookOpen, ListOrdered } from "lucide-react";
 
+const lockedEraName = "Era Perdida";
+
 export const Route = createFileRoute("/figures/$slug")({
   loader: ({ params }): { figure: Figure } => {
     const figure = getFigure(params.slug);
@@ -56,9 +58,13 @@ export const Route = createFileRoute("/figures/$slug")({
 
 function FigurePage() {
   const { figure: f } = Route.useLoaderData() as { figure: Figure };
-  const idx = figures.findIndex((x) => x.slug === f.slug);
-  const prev = figures[(idx - 1 + figures.length) % figures.length];
-  const next = figures[(idx + 1) % figures.length];
+  const navigationFigures = figures.filter((figure) =>
+    f.era === lockedEraName ? figure.era === lockedEraName : figure.era !== lockedEraName,
+  );
+  const idx = navigationFigures.findIndex((x) => x.slug === f.slug);
+  const prev = navigationFigures[(idx - 1 + navigationFigures.length) % navigationFigures.length];
+  const next = navigationFigures[(idx + 1) % navigationFigures.length];
+  const hasNavigation = navigationFigures.length > 1;
 
   return (
     <>
@@ -150,6 +156,7 @@ function FigurePage() {
             </aside>
           </section>
 
+          {hasNavigation ? (
           <section className="mt-5 grid gap-4 sm:grid-cols-2">
             <Link
               to="/figures/$slug"
@@ -168,12 +175,13 @@ function FigurePage() {
               className="aero-frame flex items-center justify-end gap-3 p-4 text-right transition-transform hover:-translate-y-0.5"
             >
               <div>
-                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Próxima</div>
+                <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Próximo</div>
                 <div className="font-semibold">{next.name}</div>
               </div>
               <ArrowRight className="h-5 w-5 text-[oklch(0.78_0.18_200)]" />
             </Link>
           </section>
+          ) : null}
         </div>
       </main>
       <Footer />
